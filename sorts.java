@@ -67,3 +67,37 @@ System.out.println("Array After selection Sort");
                 
 }
 }
+
+//3. insertion sort : good with small number of elements only 
+// go along the array and create a partion making a  sorted array as you traverse along the path . adding the next element u approah at right place .
+public class Insertion{
+public static void insertion(int[] arr){
+int n = arr.length;
+for(int i = 0 ; i < n;i++){
+  for(int j = 0 ; j < i ; j++){
+   if(arr[j]>arr[i]){
+    int temp = arr[i];
+     for(int k = i ;k>j;k--)
+      {arr[k]=arr[k-1];}
+      arr[j]=temp;
+      }
+      }
+      }
+      }
+      
+      
+
+public static void main(String[] args){
+	int arr[] = { 5,2,8,3,9};
+	 System.out.println("Array Before Insertion Sort");  
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");  
+                }  
+    insertion(arr);
+    System.out.println("Array After Insertion Sort");  
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");  
+                }  
+                }
+                }
+
