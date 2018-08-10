@@ -20,3 +20,23 @@ n3 = n2+n1 ;
   
 // without using recursion one uses for loop .
 
+//2.prime
+import java.io.*;
+import java.lang.*;
+public class Prime{
+public static void main(String[] args){
+int i ,flag=0;
+int n =7 ;// number to be checked .
+int m = (int) Math.sqrt(n);
+if(n==0||n==1){
+System.out.println(n+"not a prime ");
+}
+else{
+for(i=2;i<=m;i++)
+{
+ if(n%i == 0)
+ {System.out.println(n+"not a prime");break;}
+ else{ System.out.println(n+" a prime");}
+ }
+ }
+ }}
