@@ -78,4 +78,27 @@ System.out.println(len);
 }
 
 5. // finding largest palindrome in a string 
- 
+ import java.io.*;
+class Pali{
+public static void main(String args[])throws Exception{
+DataInputStream s = new DataInputStream(System.in);
+String a , b ;
+
+a= s.readLine();
+int len = a.length();
+int flag =0;
+for(int i =len;i>=1 ; i--){ // i is to keep track of the length of string in which we look for being palindrome
+for(int y = 0;y<=len-i;y++){// first index
+ int t = 0 ;
+  for(int m=0;m<i ; m++){
+     if(a.charAt(y+m)==a.charAt(y+i-m-1)){ t++;}
+    }
+if(t==i ) { System.out.println(a.substring(y, i+y));flag=1;}
+}
+if(flag==1) break;
+}
+
+}}
+
+
+
