@@ -101,4 +101,25 @@ if(flag==1) break;
 }}
 
 
+//6. third largest element in a array using collections 
+import java.util.*;
+public class Third{
+public static int third (Integer arr[],int total){
+List<Integer> list = Arrays.asList(arr);
+Collections.sort(list);
+int element =list.get(total-3);
+return element ;
+
+}
+public static void main(String args[]){
+Integer arr[] ={1,2,5,3,8,1,3,4};
+System.out.println(" third largest element is :" + third(arr,8));
+}
+}
+
+
+
+
+
+
 
