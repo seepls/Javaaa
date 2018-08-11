@@ -62,3 +62,17 @@ class PalindromeExample{
 }  // can also use charAt() function and compare string in reverse order .
 
 //
+
+4.// finding length without using length() funciton 
+ import java.io.*;
+class len{
+public static void main(String args[])throws Exception{
+DataInputStream s = new DataInputStream(System.in);
+String a , b ;
+a= s.readLine();
+b=new String ( );
+int len = a.compareTo(b);
+
+System.out.println(len);
+}
+}
