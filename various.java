@@ -118,7 +118,8 @@ System.out.println(" third largest element is :" + third(arr,8));
 }
 
 
-
+// 7. removing duplicate elements from a array 
+//1. using a temprory array 
 
 
 
