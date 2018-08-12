@@ -286,3 +286,26 @@ odd(arr,n);
 }
 }
   
+//12. transpose 
+class Transpose {
+public static void transpose(int[][] arr , int n){
+int[][] a = new int[n][n];
+for(int i=0;i<n;i++){
+for(int j=0 ; j <n ; j++){
+a[i][j] = arr[j][i];
+}
+}
+
+for(int i=0;i<n;i++){
+for(int j=0 ; j <n ; j++){
+System.out.print(" " +a[i][j]);
+}
+System.out.println("\n");
+}}
+
+public static void main(String[] args ) {
+int arr[][] = { {1,2,3},{1,4,5},{4,6,8}};
+int n = arr[0].length ;
+transpose(arr, n );
+}
+}
