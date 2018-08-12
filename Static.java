@@ -1,3 +1,4 @@
+
 // used for memory management mainly 
 // belongs to the class than the instance of a class 
 // can be method(class method) , variable(class variable) , nested method ,block.
@@ -6,7 +7,7 @@
 //advantage of static variable is that it makes the program memory efficient 
 //Java static property is shared to all objects.
 
-
+//JAVA STATIC METHOD
 // counter without static variable 
 class Counter{  
 int count=0;//will get memory when instance is created  
@@ -46,3 +47,11 @@ Counter2 c3=new Counter2();
 }  
 
 //output : 1 2 3 
+
+
+// JAVA STATIC METHOD 
+//Static method mainly belongsto the class than the object 
+//static method can be invoked without the need to create a object
+//static method can access static variable and set their values
+
+
