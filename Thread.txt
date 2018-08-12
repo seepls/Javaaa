@@ -20,3 +20,12 @@ TWO ways to create our own thread object :
 in both cases run method should be implemented .
 
 
+applications of java :
+implement multimedia graphics 
+develop animations
+dev. video games 
+
+objective is to reduce response time .
+
+
+
