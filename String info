@@ -1,0 +1,18 @@
+1. p =q+r ; concatenation of string 
+2. k.substring(inital , final ) == [ initial , final )
+3 . int m = Integer.parseInt(t.readLine());
+4 . a number can be converted to string by appending null string 
+5. each attribute has a get and set method for retrival and setting of object properties .
+6.static operations and attributes are needed to invoke either a service of a class before any real instances of that class are instantiated or a service that does not directly apply to any of the instances .
+7.String = final class , string objects are immutable 
+8.String refrence can be overridden but that does not delete the content 
+e.i h1 = " can" ; h2 = "can"; h3="can" ; multiple refrences can be used for same string but it will occur in the same place .
+only one pool for string "can" is created with 3 refences .
+STRING
+1. arr.length();
+2.arr.chatAt(8Of('char');
+4.a.compareTo(b)  == (a-b) 
+5.arr.contains(" " ) ;
+6.arr.endsWith( " " );
+7.arr.toLowerCase() ;
+8.arr.toUpperCase();
