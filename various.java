@@ -204,3 +204,33 @@ for(int i = 0 ; i<m ;i++)
 System.out.println("\n") ;}
 
 }
+
+//9. adding matrices
+import java.io.*;
+class Add{
+public static void add(int[][] a , int[][] b , int n ) {
+
+for(int i = 0; i < n ; i++)
+{
+  for(int j = 0 ; j<n;j++){
+  a[i][j]= a[i][j]+b[i][j];
+  }}
+  
+  }
+  public static void main(String args[]){
+  int[][] a = { {1,2,3} ,{ 4,5,6}, {7,8,9}};
+  int[][] b = {{1,1,1}, {2,2,2},{3,3,3}};
+  int n = 3 ;
+  add(a , b, n);
+  for(int i = 0 ; i < n ; i ++)
+  { for(int j =0; j<n ; j++){
+   System.out.print(" " + a[i][j]);}
+    System.out.print('\n');
+   }
+  
+   }
+   
+   }
+   
+   
+  
