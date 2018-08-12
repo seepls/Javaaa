@@ -118,10 +118,9 @@ System.out.println(" third largest element is :" + third(arr,8));
 }
 
 
-// 7. removing duplicate elements from a array 
-//1. using a temprory array 
 
-//8. seprating odd and even indexed elements from a string 
+
+//7. seprating odd and even indexed elements from a string 
 import java.io.*;
 import java.util.*;
 
@@ -147,4 +146,36 @@ public class Solution{
  printEvenOddIndices(new String[]{a});
  }}
 
+// 8. removing duplicate elements from a array 
+//1. using a temprory array  ( array must be of sorted order else Arrays.sort(arr) ) 
+//2.using seperate index
 
+//1.
+import java.io.*;
+public class Remove{
+public static int remove(int arr[] , int n ){
+if (n==0 || n==1)return n ;
+int j=0;
+int[] temp = new int[n];
+for(int i = 0 ;i<n-1 ; i++){
+if(arr[i]!=arr[i+1]){
+temp[j++] = arr[i];}
+}
+temp[j++] = arr[n-1] ;
+
+for(int i=0;i<j ; i++)
+{ arr[i]=temp[i];}
+return j ;
+}
+
+public static void main(String[] args){
+int[] arr = { 2,3,4,4,4,6,6,7,7,7,7,8};
+int n = arr.length;
+int m = remove(arr,n);
+
+for(int i = 0 ; i<m ;i++)
+{System.out.print(" " + arr[i]);}
+
+System.out.println("\n") ;}
+
+}
