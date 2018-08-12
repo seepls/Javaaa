@@ -262,5 +262,27 @@ c[i][j]  += a[i][m]*b[m][j];
    }
    
    }
-   
+   //11. seprating odd and even numbers from an array 
+class OddEven{
+public static void odd(int arr[] , int n){
+int[] even=new int[n] ;int j = 0;
+boolean flag = false;
+for(int i = 0 ;i<n ; i++){
+if(flag == false){System.out.println("even"); flag = true;}
+if(arr[i]%2==0)System.out.println(arr[i]);
+
+else even[j++]= arr[i] ; 
+
+}
+System.out.println("odd");
+for(int m = 0 ; m< j ; m++) { 
+System.out.println(even[m]);
+}}
+
+public static void main(String[] args ) { 
+int arr[] = { 1,3,2,5,4,6,8,7};
+int n = arr.length ; 
+odd(arr,n);
+}
+}
   
