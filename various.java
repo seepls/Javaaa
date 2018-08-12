@@ -232,5 +232,35 @@ for(int i = 0; i < n ; i++)
    
    }
    
+//10.multiplying 2 matrices
+import java.io.*;
+class Mul{
+public static int[][] mul(int[][] a , int[][] b , int n ) {
+int[][] c  =new int[n][n];
+for(int i = 0; i < n ; i++)
+{;
+  for(int j = 0 ; j<n;j++){
+  
+  for(int m=0;m<n;m++){
+c[i][j]  += a[i][m]*b[m][j];
+  }}}
+  return c;
+  }
+  public static void main(String args[])throws Exception{
+  int[][] a = { {1,2,3} ,{ 1,1,1}, {2,2,2}};
+  int[][] b = {{1,1,1}, {2,2,2},{3,3,3}};
+  
+  int n = 3 ;
+  int[][] d = new int[n][n];
+   d = mul(a , b, n);
+  for(int i = 0 ; i < n ; i ++)
+  { for(int j =0; j<n ; j++){
+   System.out.print(" " + d[i][j]);}
+    System.out.print('\n');
+   }
+  
+   }
+   
+   }
    
   
