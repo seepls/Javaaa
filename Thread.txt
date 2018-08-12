@@ -1,0 +1,22 @@
+/* a thread is a single sequence of execution within a program 
+multiple threading = multiple threads of control within a single program : each prgram can run multiple threads of control within it.
+thread is a subset of process 
+concurrency and parallelism: process and order of execution .
+Thread share the address space of the process that created it .processes have their own address space.
+application thread : when we execute a program: JVM creates a thread object whose task is defined by main method 
+starts the method and stops when method returns | thread dies. 
+
+
+MULtiple threads in an application : 
+1.each thread has its private run-time stack 
+2.if two threads execute the same method each has its own copy .
+3.all thread see the same dynamic programming (heap)
+4.two different threads can act on same object and same static feilds concurrently 
+
+
+TWO ways to create our own thread object :
+1.subclassing  the thread class and instantiating
+2.implementing runnable interface 
+in both cases run method should be implemented .
+
+
