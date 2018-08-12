@@ -56,3 +56,24 @@ Counter2 c3=new Counter2();
 
 
 //why java main method is static : as object is not needed to call static method , if it would have been non static , JVM first had to create a object in order to call it 
+
+// JAVA STATIC BLOCK
+// used to initialize static data memebers
+// executed before main method at time of classloading
+class A2{  
+  static{System.out.println("static block is invoked");}  
+  public static void main(String args[]){  
+   System.out.println("Hello main");  
+  }  
+}  
+
+// output : static block is invoked
+      // Hello main
+// execute programe without main ?? 
+// using static block
+class A3{  
+  static{  
+  System.out.println("static block is invoked");  
+  System.exit(0);  
+  }  
+}  // in earlier version of jdk , not any more 
