@@ -55,3 +55,4 @@ Counter2 c3=new Counter2();
 //static method can access static variable and set their values
 
 
+//why java main method is static : as object is not needed to call static method , if it would have been non static , JVM first had to create a object in order to call it 
