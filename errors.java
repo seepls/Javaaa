@@ -32,3 +32,18 @@ for(int i =1 ; i <= n ; i++ ) {
  System.out.println(n+"factorial is " + m);
  }
  }
+
+//4.static access errors
+class A{  
+ int a=40;//non static  
+   
+ public static void main(String args[]){  
+  System.out.println(a);  
+ }  
+}      //Output:Compile Time Error
+
+
+//two main restriction with static method : 1. static method cannot call non-static variable directly
+//this and super cannot be used in static context 
+
+
