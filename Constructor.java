@@ -26,3 +26,10 @@ class Student5{
     s2.display();  
    }  
 }  
+
+//java : copy values of one object to another : 3 ways 
+// constructor : copy :clone() method of  Object class
+// does constructor return any value : YESSS!!!returns current class instance . you cannot use a return type yet it returns a value.
+// one can perfrm any operation in a constructor that he can in a method 
+
+ 
