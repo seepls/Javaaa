@@ -42,3 +42,30 @@ class A {
     new A().n();
   }
 }
+//3. to invoke current class constructor 
+//calling default constructor from parametarized 
+class A{  
+A(){System.out.println("hello a");}  
+A(int x){  
+this();  
+System.out.println(x);  
+}  
+}  
+class TestThis5{  
+public static void main(String args[]){  
+A a=new A(10);  
+}}  
+//4.calling parametarized constructor from default 
+class A{  
+A(){  
+this(5);  
+System.out.println("hello a");  
+}  
+A(int x){  
+System.out.println(x);  
+}  
+}  
+class TestThis6{  
+public static void main(String args[]){  
+A a=new A();  
+}}  
