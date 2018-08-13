@@ -19,3 +19,26 @@ Student s2=new Student(112,"sumit",6000f);
 s1.display();  
 s2.display();  
 }}  
+
+//2.this : to invoke current class method 
+// if you dont use this key word the compiler it self interprets it .
+//eg; 
+class A {
+  void m(){}
+  void n(){
+  m();
+  }
+  public static void main (String[] args){
+    new A().n();
+  }
+}
+//compiler inerprets it as :
+class A {
+  void m(){}
+  void n(){
+  this.m();
+  }
+  public static void main (String[] args){
+    new A().n();
+  }
+}
