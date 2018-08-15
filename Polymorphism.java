@@ -10,3 +10,5 @@ class OverloadingCalculation3{
   obj.sum(20,20);//now ambiguity  
   }  
 }  
+
+//One type is not de-promoted implicitly for example double cannot be depromoted to any type implicitly.
