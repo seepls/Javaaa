@@ -91,9 +91,60 @@ d.work();
 }}  
 
 
+// can be used to invoke parent class constructor 
+class Animal{  
+Animal(){System.out.println("animal is created");}  
+}  
+class Dog extends Animal{  
+Dog(){  
+super();  
+System.out.println("dog is created");  
+}  
+}  
+class TestSuper3{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+}}  
+//super() is added in each class constructor automatically by compiler if there is no super() or this().
+//example 
+class Animal{  
+Animal(){System.out.println("animal is created");}  
+}  
+class Dog extends Animal{  
+Dog(){  
+System.out.println("dog is created");  
+}  
+}  
+class TestSuper4{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+}}  
+
+//output :: animal is created
+// dog is created
 
 
-
+class Person{  
+int id;  
+String name;  
+Person(int id,String name){  
+this.id=id;  
+this.name=name;  
+}  
+}  
+class Emp extends Person{  
+float salary;  
+Emp(int id,String name,float salary){  
+super(id,name);//reusing parent constructor  
+this.salary=salary;  
+}  
+void display(){System.out.println(id+" "+name+" "+salary);}  
+}  
+class TestSuper5{  
+public static void main(String[] args){  
+Emp e1=new Emp(1,"ankit",45000f);  
+e1.display();  
+}}  
 
 
 
