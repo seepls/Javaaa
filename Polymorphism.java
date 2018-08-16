@@ -147,6 +147,31 @@ e1.display();
 }}  
 
 
+//what invoked first instance initialiser block or constructor 
+//The java compiler copies the instance initializer block in the constructor after the first statement super(). 
+//  So firstly, constructor is invoked. 
+
+class A{  
+A(){  
+System.out.println("parent class constructor invoked");  
+}  
+}  
+class B2 extends A{  
+B2(){  
+super();  
+System.out.println("child class constructor invoked");  
+}  
+  
+{System.out.println("instance initializer block is invoked");}  
+  
+public static void main(String args[]){  
+B2 b=new B2();  
+}  
+}  
+// output 
+// parent class constructor invoked
+       //instance initializer block is invoked
+       //child class constructor invoked
 
 
 
