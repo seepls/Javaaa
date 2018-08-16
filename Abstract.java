@@ -41,3 +41,40 @@ public static void main(String args[]){
   obj.changeGear();  
  }  
 }  
+
+// multiple inheritance
+interface Printable{  
+void print();  
+}  
+interface Showable{  
+void show();  
+}  
+class A7 implements Printable,Showable{  
+public void print(){System.out.println("Hello");}  
+public void show(){System.out.println("Welcome");}  
+  
+public static void main(String args[]){  
+A7 obj = new A7();  
+obj.print();  
+obj.show();  
+ }  
+}  
+
+
+//A class implements an interface, but one interface extends another interface.
+interface Printable{  
+void print();  
+}  
+interface Showable extends Printable{  
+void show();  
+}  
+class TestInterface4 implements Showable{  
+public void print(){System.out.println("Hello");}  
+public void show(){System.out.println("Welcome");}  
+  
+public static void main(String args[]){  
+TestInterface4 obj = new TestInterface4();  
+obj.print();  
+obj.show();  
+ }  
+}  
