@@ -25,3 +25,8 @@ class B{
    obj.msg();  
   }  
 }  
+
+
+//If you import a package, all the classes and interface of that package will be imported 
+//excluding the classes and interfaces of the subpackages. Hence, you need to import the subpackage as well.
+//Package inside the package is called the subpackage. It should be created to categorize the package further.
