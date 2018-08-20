@@ -182,6 +182,20 @@ class MergeSort{
     }
 }
 
+//5.quick sort 
+// picks and element as pivot and partitions the array about the fixed pivot 
+// different versions of quick sort that pick pivot in different ways : first element , last element , ransom element , median;
+//key process is partition 
+//given an array and an element x of array as pivot , put it at its correct place in sorted array 
+// put all smaller elements before x ,and  put all greater elements after x  // do all this in linear time 
+import java.io.*;
+import java.lang.*;
+class QuickSort {
+	int partition (int arr[] , int low ,int high )
+
+
+
+
 		
 		
 
