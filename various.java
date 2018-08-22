@@ -335,3 +335,9 @@ for(int j = 0 ; j< n ; j++){
 System.out.println("sum of upper triangular matrix :" + sum );
 
 }}
+
+//14. finding gcd 
+def gcd(a, b):
+    if (a < b) swap(a, b)
+    if (b == 0) return a;
+    else return gcd(b, a % b)
