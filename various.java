@@ -310,7 +310,9 @@ transpose(arr, n );
 }
 }
 
-//13. upper triangular matrix 
+//13. upper triangular matrix  : includes diagonal
+//upper triangular matrix : diagonal + elements above it 
+//lower triangular matrix : diagonal + elements below it , making i < j in 2nd for loop 
 import java.util.*;
 
 class Ani{
