@@ -58,35 +58,36 @@ class smriti
   if(p=='F'){//print the list in reverse order 
     
   }
-  if(p=='G'){
+  if(p=='G'){//print the first element 
   }
-  if(p=='H'){
+  if(p=='H'){// Hx : print the xth element 
   }
-  if(p=='I'){
+  if(p=='I'){// Ix : put x at the beginning 
   }
-  if(p=='J'){
+  if(p=='J'){// remove the first element
   }
-  if(p=='K'){
+  if(p=='K'){// print the maximum element 
   }
-  if(p=='L'){
+  if(p=='L'){//remove the max element 
   }
-  if(p=='M'){
+  if(p=='M'){//Mx: put x at proper position in  sorted list
   }
-  if(p=='N'){
+  if(p=='N'){//replace xth element by y
   }
-  if(p=='P'){
+  if(p=='P'){// print list in decending order 
+      
   }
-  if(p=='Q'){
+  if(p=='Q'){//Qx : whether x is present or not 
   }
-  if(p=='R'){
+  if(p=='R'){//Rx: remove x 
   }
-  if(p=='W'){
+  if(p=='W'){//first line of selection sort 
   }
-  if(p=='X'){
+  if(p=='X'){//first line of bubble sort 
   }
-  if(p=='Y'){
+  if(p=='Y'){// complete method of selection sort 
   }
-  if(p=='Z'){
+  if(p=='Z'){// complete method of bubble sort 
   }
   
   }while(1==1);
