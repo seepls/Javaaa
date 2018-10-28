@@ -12,20 +12,51 @@ class smriti
   int i,j,size = 0 ;
   do{a = u.readLine();
   p = a.charAt(0);
-  if( p =='A')
-  {
+  if( p =='A')//Ax put x at end
+  { b = a.substring(1);
+    s.push(b);
+   size = size +1 ;
   }
-  if(p=='B')
-  {
+  if(p=='B') // remove the last element 
+  {s.pop();
+   size = size -1 ;
   }
-  if(p=='C'){
+  if(p=='C'){ // print the last element 
+    b = s.pop();
+    System.out.println(b);
+    s.push(b);
   }
-  if(p=='D'){
+  if(p=='D'){//print the entire list 
+    for(i =1;i<=size ;i++){
+      b=s.pop();
+      t.push(b);
+    }
+    for(i=1;i<=size ;i++){
+      b=t.pop();
+      System.out.print(b+" ");
+      s.push(b);
+    }
+    
   }
   
-  if(p=='E'){
+  if(p=='E'){// Exy : put y at location x 
+    q=a.charAt(1);
+    c=a.substring(2);
+    j = (int)q-48;
+    j=size+2-j;
+    size = size +1;
+    for(i =1 ;i<=j-1;i++){
+      b=s.pop();
+      t.push(b);
+    }
+    s.push(c);
+    for(i=1;i<=j-1;i++){
+      b=t.pop();
+      s.push(b);
+    }
   }
-  if(p=='F'){
+  if(p=='F'){//print the list in reverse order 
+    
   }
   if(p=='G'){
   }
