@@ -4,4 +4,6 @@ import java.lang.*;
 import javax.swing.*;
 import java.applet.*;
 
-public
+publicclass name extends Applet
+{
+}
