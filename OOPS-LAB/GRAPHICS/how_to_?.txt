@@ -1,2 +1,12 @@
 make a file named say , name.java , here the class and file name must be same 
-then make a html file with the codes 
+then make a html file with the code:
+<html>
+<applet code = "name.java" set parameters >
+</applet>
+</html>
+
+and then on terminal :
+javac name.java
+appletviewer html_file_name 
+
+to run the program .
