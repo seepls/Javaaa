@@ -78,6 +78,10 @@ can also be done by :
  chooser showDialog(null, "open"/"save");
 
 
+11. with filterclass " Java Filter " we can set a file chooser to list only directories and java source files by writing
 
+JFilechooser chooser = new JFilechooser() ;
+chooser.getFileFilter(new JavaFilter());
+int status = choose showopenDialog(null);
 
 
