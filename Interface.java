@@ -1,55 +1,68 @@
-// interface in java is blueprint of class.
-// has static constants and  abstract methods , cannot have a method body .
-// 1. class extends class
-//2.class impliments interface
-//3.interface extends interface
+import java.io.*;
+import java.lang.*;
+interface picture { float area() ;void change() ; void size();}
+class rectangle implements picture {
+float p,q;
+public rectangle(float a,float b){p =a ; q = b ; }
+public int  getl(){return (int)p ;}
+public int getb(){return (int)q;}
+public void change(){ p = p+5 ; q = q+7;}
+public void size(){System.out.print("size "+ p +" "+q);}
+public float area(){return p*q ;}
+}
+class circle implements picture
+{
+	float r ; public circle(float a){r=a;}
+	public int getr(){return (int)r ;}
+	public float area(){ return (float)3.14*r*r ;}
+    public void change(){r = r+10; }
+    public void size(){System.out.print("size" + r );}
+}
 
-// multiple inheritance 
-interface Printable{  
-void print();  
-}  
-interface Showable{  
-void show();  
-}  
-class A7 implements Printable,Showable{  
-public void print(){System.out.println("Hello");}  
-public void show(){System.out.println("Welcome");}  
-  
-public static void main(String args[]){  
-A7 obj = new A7();  
-obj.print();  
-obj.show();  
- }  
-}  
+class ravi
+{
+	public static void main(String args[])throws Exception
+	{
+		picture p[] = new picture[20];
+		char what[] = new char[20];
+		float a,b;
+		int i,n=0;
+		String s,t,u;
+		char v,w ;
+		DataInputStream o = new DataInputStream(System.in);
+		do{
+			s= o.readLine();
+			w = s.charAt(0);
+			if(w=='C')
+			{
+				n = n+1 ;t = s.substring(1); a = Float.parseFloat(t);
+				p[n] = new circle(a);
+				what[n] = 'C';
+				System.out.println(n+"is circle radius"+a);
+			}
+			if(w=='R'){
+				n = n+1 ; i =s.indexOf(',');
+				t=s.substring(1,i); a = Float.parseFloat(t);
+				u = s.substring(i+1); b = Float.parseFloat(u);
+				p[n]=new rectangle(a,b);what[n] = 'R';
+				System.out.println(n+"rectangle length : "+a+"breadth"+b);
+			}
+			if(w=='A'){
+				v = s.charAt(1); 
+				i = (int)v- 48 ; 
+				System.out.println(p[i].area());
 
-// example where we are using interface and abstract class both.
-
-interface A{  
-void a();//bydefault, public and abstract  
-void b();  
-void c();  
-void d();  
-}  
-  
-//Creating abstract class that provides the implementation of one method of A interface  
-abstract class B implements A{  
-public void c(){System.out.println("I am C");}  
-}  
-  
-//Creating subclass of abstract class, now we need to provide the implementation of rest of the methods  
-class M extends B{  
-public void a(){System.out.println("I am a");}  
-public void b(){System.out.println("I am b");}  
-public void d(){System.out.println("I am d");}  
-}  
-  
-//Creating a test class that calls the methods of A interface  
-class Test5{  
-public static void main(String args[]){  
-A a=new M();  
-a.a();  
-a.b();  
-a.c();  
-a.d();  
-}}  
-
+			}
+			if(w=='B'){
+				t = s.substring(1);
+				i = Integer.parseInt(t);
+				p[i].change();
+			}
+			if(w=='D'){
+		 		t = s.substring(1);
+		 		i = Integer.parseInt(t);
+		 		p[i].size();
+		 	}
+		}while(1==1);
+	}
+}

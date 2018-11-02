@@ -1,0 +1,13 @@
+thread.txt
+ if we have a complete class structure that already has a detailed inheritance tree and want it to run in its own thread, we cannot simply make this class structure inherit from the Thread class as we did before
+
+ The Java language deals with this lack of multiple inheritance by using the mechanism known as interfaces
+
+
+ runnable : 
+ public interface Runnable {
+     public abstract void run();
+}
+
+runnable contains only one function : run() ;
+thread class impliments runnable interface;
