@@ -1,8 +1,8 @@
 // interface has all abstract method  : unlike abstract class which can have both concrete and abstract method 
 //interface implimented  and abstract class extends 
-
-
-
+//using interface we can do multiple inheritance : not in abstract class 
+//performance of abstract > interface 
+//priority queue : abstract data type : each element has priority associated .
 
 import java.io.*;
 import java.lang.*;
@@ -13,6 +13,7 @@ public rectangle(float a,float b){p =a ; q = b ; }
 public int  getl(){return (int)p ;}
 public int getb(){return (int)q;}
 public void change(){ p = p+5 ; q = q+7;}
+	
 public void size(){System.out.print("size "+ p +" "+q);}
 public float area(){return p*q ;}
 }
