@@ -1,3 +1,9 @@
+// interface has all abstract method  : unlike abstract class which can have both concrete and abstract method 
+//interface implimented  and abstract class extends 
+
+
+
+
 import java.io.*;
 import java.lang.*;
 interface picture { float area() ;void change() ; void size();}
