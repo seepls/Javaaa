@@ -1,4 +1,4 @@
-// abstract class can have abstract and non-abstract methods 
+// abstract class can have abstract and non-abstract methods  , ATLEAST one abstract method.
 // abstraction is a process of hiding implimentation details . 
 // 2 ways to acheive abstraction in java 
 // 1. abstarct class(0 to 100%) 2.  Interface (100%) 
@@ -9,7 +9,7 @@
 // it can have final methods which can force the subclass not to change the body of the method .
 
 
-// abstract method : a methid which is declared as abstract and does not have implimentation is known as abstract class .
+// abstract method : a method which is declared as abstract and does not have implimentation is known as abstract class .
 // example abstract class with abstract method 
 abstract class Bike{  
   abstract void run();  
