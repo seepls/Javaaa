@@ -1,0 +1,18 @@
+c++
+If you use class to define your class, the default access specifier will be private. (I think it's wrong, too.)
+If you use struct, however, it will be public.
+
+
+very important :: 
+class A {};
+struct B: /* public */ A {};
+
+struct A {};
+class B: /* private */ A {};
+
+JAVA::
+https://www.google.com/imgres?imgurl=https://cdn.journaldev.com/wp-content/
+uploads/2013/10/java-access-modifiers-table-1.png&imgrefurl=https://www.journaldev.com/2345/
+java-access-modifiers&h=931&w=1600&tbnid=KGKk9u8l_z2djM:&q=default+access+modifier+in+java&tbnh=
+124&tbnw=214&usg=AI4_-kSk5ErhVpF79gSW9LpzJ0saNodbYw&vet=12ahUKEwij3tuQ3dbeAhVBto8KHeIDBmYQ9QEwAHoECAUQBg
+..i&docid=9ojSHAMMYqFEOM&client=safari&sa=X&ved=2ahUKEwij3tuQ3dbeAhVBto8KHeIDBmYQ9QEwAHoECAUQBg
